@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>ECMAScript 6 mit Beispielen lernen</title>
+</head>
+<body>
+<script>
+function erstellePerson(name, alter) {
+return {
+name: name,
+alter: alter,
+protokolliereName: function(){
+console.log(this.name);	
+}
+};
+}
+let person = erstellePerson("Astrid", 50);
+person.protokolliereName(); // Ausgabe: Astrid
+</script>    
+</body>
+</html>

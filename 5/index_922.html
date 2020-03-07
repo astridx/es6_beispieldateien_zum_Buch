@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>ECMAScript 6 mit Beispielen lernen</title>
+</head>
+<body>
+<script>
+let farben = { 
+farbcode: {
+rot: {
+hellrot: "#FFEEEEE",
+dunkelrot: "#FF0000",
+}
+},
+};
+let {farbcode: {rot}}  = farben;
+console.log(rot.hellrot); // Ausgabe: #FFEEEE
+console.log(rot.dunkelrot); // Ausgabe: #FF0000
+</script>    
+</body>
+</html>

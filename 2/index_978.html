@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>ECMAScript 6 mit Beispielen lernen</title>
+</head>
+<body>
+<script>
+console.log(is32Bit("😅")); // Ausgabe: true
+console.log(is32Bit("!"));  // Ausgabe: false
+
+function is32Bit(c){
+    return c.codePointAt(0) > 0xFFFF;
+}
+</script>    
+</body>
+</html>
